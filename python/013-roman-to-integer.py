@@ -1,6 +1,10 @@
 """
 Time: O(n)
 Space: O(1)
+
+Note: 
+1. key condition is if mapping[s[i]] < mapping[s[i+1]]
+2. Don't forget to add mapping[s[-1]] in return value
 """
 
 class Solution:
