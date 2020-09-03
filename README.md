@@ -1,7 +1,7 @@
 LeetCode
 ========
 
-### LeetCode Algorithm "&hearts;"
+### LeetCode Algorithm &hearts;
 
 ### String
 | # | Title | Solution | Difficulty | Time | Space | Tag | Legend | Note |
