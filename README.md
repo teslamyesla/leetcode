@@ -6,7 +6,7 @@ LeetCode
 ### String
 | # | Title | Solution | Difficulty | Time | Space | Tag | Legend | Note |
 |---| ----- | -------- | ---------- | ---- | ----- | --- | ------ | ---- |
-|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Python]()|Medium|O(n)|O(n)|String,Sliding Window|*| for r in range(len(s)), change l position correspondingly. |
+|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Python]()|Medium|O(n)|O(n)|String,Sliding Window|*| Right 1 pass: for r in range(len(s)), change l position correspondingly. |
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |[Python]()|Medium|O(n^2)|O(1)|String|*| expandAroundCenter(s,i,i) and expandAroundCenter(s,i,i+1) |
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Python]()|Easy|O(n)|O(1)|String,Math|*| |
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Python]()|Easy|O(n)|O(n)|String,Stack|y| |
