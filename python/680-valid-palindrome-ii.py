@@ -7,6 +7,7 @@ Complexity Analysis
 Note: 
 1. isPalindrome checks whether a given string s is palindrome
 2. Key idea is: if s[i] == s[j] then we may take i++; j--. Otherwise, the palindrome must be either s[i+1], s[i+2], ..., s[j] or s[i], s[i+1], ..., s[j-1], and we should check both cases.
+
 """
 
 class Solution:
