@@ -3,9 +3,13 @@ Expand Around Center
 
 Complexity Analysis
 
-    Time complexity : O(n^2). Since expanding a palindrome around its center could take O(n)time, the overall complexity is O(n^2).
+    Time complexity : O(n^2). Since expanding a palindrome around its center could take O(n) time, the overall complexity is O(n^2).
     Space complexity : O(1). 
-    
+ 
+Note:
+When expandAroundCenter(s, i, i), center is i
+When expandAroundCenter(s, i, i + 1), center is between i and i + 1
+
 """
 
 class Solution:
