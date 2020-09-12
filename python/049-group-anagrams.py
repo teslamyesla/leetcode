@@ -4,6 +4,9 @@ Complexity Analysis
     Time Complexity: O(NK), where N is the length of strs, and K is the maximum length of a string in strs. Counting each string is linear in the size of the string, and we count every string.
     Space Complexity: O(NK), the total information content stored in ans.
 
+Note:
+1. collections.defaultdict(list) - value type is list (default type is int) 
+2. dict[tuple(cnt)].append(s) or dict[''.join(sorted(s))].append(s) - key cannot be list, need to convert to string or tuple
 """
 
 class Solution:
