@@ -9,6 +9,8 @@ Space Complexity: O(m), As we use an array of size m to store the result of subp
 
 此题关键在于 1）先转化为subset sum = sum // 2问题 
            2）类coin change DP，但每个元素只能取一次
+           
+Trick: base case memo could be skipped，直接return，原因在于：base case其实也会有被多个分支重复call的情况，但因为计算起来太简单，和查memo其实差不多了，所以memo与否就不重要了
 """
 
 class Solution:
