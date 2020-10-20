@@ -19,5 +19,9 @@ LeetCode
 |680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [Python](https://github.com/teslamyesla/leetcode/blob/master/python/680-valid-palindrome-ii.py)|Easy|O(n)|O(1)|String, Two Pointers|*| If s[i] == s[j] then we may take i++; j--. Otherwise, the palindrome must be either s[i+1], s[i+2], ..., s[j] or s[i], s[i+1], ..., s[j-1], and we should check both cases.| 2020-09-01 |
 
 
-
+### DP
+| # | Title | Solution | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
+|---| ----- | -------- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
+|416|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | [Python](https://github.com/teslamyesla/leetcode/blob/master/python/416-partition-equal-subset-sum.py)|Medium|O(m⋅n)|O(m)|DP, DFS+memo|*| 1. Convert to subSetSum = sum // 2 2. Similiar as Coin Change DP, but each number can only be used once (thus DP[i] update in a reverse order)  | 2020-10-18 |
+|473|[Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Python](https://github.com/teslamyesla/leetcode/blob/master/python/473-matchsticks-to-square.py)|Medium|O(4^n)|O(n)|DFS+memo+backtracking|*| for i in range(4): sums[i] += nums[idx]; dfs; sums[i] -= nums[idx] | 2020-10-19 |
 
