@@ -1,7 +1,7 @@
 LeetCode
 ========
 
-### LeetCode Algorithm &hearts;
+### LeetCode Algorithms &hearts;
 
 ### String
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
@@ -28,7 +28,7 @@ LeetCode
 LintCode
 ========
 
-### LintCode only Algorithm &hearts;
+### LintCode Only Algorithms &hearts;
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
 |14|[First Position of Target]() |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
