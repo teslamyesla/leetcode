@@ -19,7 +19,7 @@ LeetCode
 |680|[Valid Palindrome II](https://github.com/teslamyesla/leetcode/blob/master/python/680-valid-palindrome-ii.py) | Easy|O(n)|O(1)|String, Two Pointers|*| If s[i] == s[j] then we may take i++; j--. Otherwise, the palindrome must be either s[i+1], s[i+2], ..., s[j] or s[i], s[i+1], ..., s[j-1], and we should check both cases.| 2020-09-01 |
 
 
-### DP
+### Dynamic Programming
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
 |416|[Partition Equal Subset Sum](https://github.com/teslamyesla/leetcode/blob/master/python/416-partition-equal-subset-sum.py) |Medium|O(m⋅n)|O(m)|DP, DFS, memo|*| 1. Convert to subSetSum = sum // 2  2. Similiar as Coin Change DP, but each number can only be used once (thus DP[i] update in a reverse order) | 2020-10-18 |
