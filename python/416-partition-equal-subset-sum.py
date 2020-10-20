@@ -1,11 +1,13 @@
 """
-Solution 1: DFS + memo 
+Solution 1: Bottom up 1D DP
+Time Complexity : O(m⋅n), where m is the subSetSum, and n is the number of array elements. The time complexity is the same as using 2D DP.
+Space Complexity: O(m), As we use an array of size m to store the result of subproblems.
+
+Solution 2: DFS + memo 
 Time Complexity : worst case O(2^n), where n is the number of array elements. The calculated subSetSum maybe always unique, where the worst-case time complexity would be the same as the non-memoized version in brute force (The recursive solution takes the form of a binary tree where there are 2 possibilities for every array element and the maximum depth of the tree could be n). However, for normal case, the time complexity should be same as bottom up DP.
 Space Complexity: O(m⋅n), where n is the number of array elements and mmm is the subSetSum. We are using a 2 dimensional array memo of size (m⋅n)and O(n) space to store the recursive call stack. This gives us the space complexity as O(n)+ O(m⋅n)
 
-Solution 2: Bottom up 1D DP
-Time Complexity : O(m⋅n), where m is the subSetSum, and n is the number of array elements. The time complexity is the same as using 2D DP.
-Space Complexity: O(m), As we use an array of size m to store the result of subproblems.
+Solution 3: DFS + memo, 和473. Matchsticks to Square统一写法
 
 此题关键在于 1）先转化为subset sum = sum // 2问题 
            2）类coin change DP，但每个元素只能取一次
@@ -15,7 +17,7 @@ Trick: base case memo could be skipped，直接return，原因在于：base case
 
 class Solution:
     """
-    Solution 2: Bottom up 1D DP
+    Solution 1: Bottom up 1D DP
     """
     def canPartition(self, nums: List[int]) -> bool:
         total_sum = sum(nums)
@@ -33,7 +35,7 @@ class Solution:
         return dp[target]
         
     """
-    Solution 1: DFS + memo
+    Solution 2: DFS + memo
     
     def canPartition(self, nums: List[int]) -> bool:
         total_sum = sum(nums)
@@ -62,3 +64,46 @@ class Solution:
         
         return result
     """
+
+    """
+    Solution 3: DFS + memo, directly use 473. Matchsticks to Square's method
+    
+    def canPartition(self, nums: List[int]) -> bool:
+        if not nums:
+            return False
+        
+        total = sum(nums)
+        if total % 2 != 0:
+            return False
+        
+        target = total // 2
+        nums.sort(reverse=True)
+        sums = [0] * 2
+        memo = {}
+        
+        return self.dfs(nums, sums, 0, target, memo)
+    
+    def dfs(self, nums, sums, idx, target, memo):
+        if idx == len(nums):
+            if sums[0] == target:
+                return True
+            else:
+                return False
+            
+        if (idx, tuple(sorted(sums))) in memo:
+            return memo[(idx, tuple(sorted(sums)))]
+            
+        for i in range(2):
+            if sums[i] + nums[idx] > target:
+                continue
+            sums[i] += nums[idx]
+            
+            if self.dfs(nums, sums, idx + 1, target, memo):
+                memo[(idx, tuple(sorted(sums)))] = True
+                return True
+            sums[i] -= nums[idx]
+        
+        memo[(idx, tuple(sorted(sums)))] = False
+        return False
+    """
+
