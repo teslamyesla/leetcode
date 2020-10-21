@@ -5,7 +5,7 @@ Time: O(V+E)
 Space: O(V)
 
 Solution 2: Union Find
-Time: O(ElogE), faster implementation makes it O(E) (http://users.pja.edu.pl/~msyd/wyka-eng/mst.pdf)
+Time: O(ElogE), usually O(ElogE) faster implementation makes it O(E) (http://users.pja.edu.pl/~msyd/wyka-eng/mst.pdf)
 Space: O(V)
 
 """
