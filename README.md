@@ -31,6 +31,6 @@ LintCode
 ### LintCode only algorithm &hearts;
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
-|14|[First Position of Target]() |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
-|458|[Last Position of Target]() |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
-|462|[Total Occurrence of Target]() |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
+|14|[First Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-014-first-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
+|458|[Last Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-458-last-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
+|462|[Total Occurrence of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-462-total-occurrence-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
