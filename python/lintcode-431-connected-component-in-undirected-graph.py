@@ -1,12 +1,15 @@
 """
+
 Solution 1: DFS
 Time: O(V+E)
 Space: O(V+E)
 
 Solution 2: Union Find
-"""
 Time: O(ElogE), faster implementation makes it O(E) (http://users.pja.edu.pl/~msyd/wyka-eng/mst.pdf)
 Space: O(V)
+
+"""
+
 
 """
 Definition for a undirected graph node
