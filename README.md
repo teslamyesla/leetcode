@@ -22,7 +22,7 @@ LeetCode
 ### Dynamic Programming
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
-|322|[Coin Change](https://github.com/teslamyesla/leetcode/blob/master/python/322-coin-change.py) |Medium|O(S*n), S: amount, n: number of coins|O(S)|DP|*| | 2020-10-20 |
+|322|[Coin Change](https://github.com/teslamyesla/leetcode/blob/master/python/322-coin-change.py) |Medium|O(S*n), S: amount, n: number of coins|O(S)|DP|*| NA | 2020-10-20 |
 |416|[Partition Equal Subset Sum](https://github.com/teslamyesla/leetcode/blob/master/python/416-partition-equal-subset-sum.py) |Medium|O(m⋅n)|O(m)|DP, DFS, memo|*| 1. Convert to subSetSum = sum // 2  2. Similiar as Coin Change DP, but each number can only be used once (thus DP[i] update in a reverse order) | 2020-10-18 |
 |473|[Matchsticks to Square](https://github.com/teslamyesla/leetcode/blob/master/python/473-matchsticks-to-square.py) |Medium|O(4^n)|O(n)|DFS, memo, backtracking|*| for i in range(4): sums[i] += nums[idx]; dfs; sums[i] -= nums[idx] | 2020-10-19 |
 
@@ -32,6 +32,6 @@ LintCode
 ### LintCode only algorithm &hearts;
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
-|14|[First Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-014-first-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
-|458|[Last Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-458-last-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
-|462|[Total Occurrence of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-462-total-occurrence-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y|  | 2020-10-20 |
+|14|[First Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-014-first-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
+|458|[Last Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-458-last-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
+|462|[Total Occurrence of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-462-total-occurrence-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
