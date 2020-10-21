@@ -1,7 +1,10 @@
 """
-
 Time complexity : O(S∗n), where S is amount, n is number of coins. On each step the algorithm finds the next F(i) in n iterations, therefore in total the iterations are S∗n.
 Space complexity : O(S). We use extra space for the dp table.
+
+Note: 
+1. initialize dp with float('inf'), not zeros, due to the min problem
+2. return dp[-1] if dp[-1] != float('inf'), else return -1
 
 """
 
