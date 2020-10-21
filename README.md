@@ -42,7 +42,7 @@ LintCode
 ### Graph
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
-|178|[Graph Valid Tree]() |Medium| | |Topology Sort|*| NA | 2020-10-14 |
+|178|[Graph Valid Tree](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-178-graph-valid-tree.py) |Medium| O(n)| O(n)|DFS / Union Find|*| NA | 2020-10-14 |
 |431|[Connected Component in Undirected Graph]() |Medium| | |DFS / Union Find|*| NA | 2020-10-14 |
-|892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|DFS / Union Find|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. use HEAP instead of Queue to maintain lexicographical order during topological sort! | 2020-10-14 |
+|892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|Topology Sort|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. use HEAP instead of Queue to maintain lexicographical order during topological sort! | 2020-10-14 |
 
