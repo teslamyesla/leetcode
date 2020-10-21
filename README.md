@@ -11,7 +11,7 @@ LeetCode
 |13|[Roman to Integer](https://github.com/teslamyesla/leetcode/blob/master/python/013-roman-to-integer.py) |Easy|O(n)|O(1)|String, Math|y| if mapping[s[i]] < mapping[s[i+1]]: res -= mapping[s[i]] | 2020-09-02 |
 |20|[Valid Parentheses](https://github.com/teslamyesla/leetcode/blob/master/python/020-valid-parentheses.py) |Easy|O(n)|O(n)|String, Stack|y| NA | 2020-09-01 |
 |49|[Group Anagrams](https://github.com/teslamyesla/leetcode/blob/master/python/049-group-anagrams.py) |Medium| O(nK), n: # of strs, K: maxlen of str in strs| O(nK)|String|*| 1. collections.defaultdict(list) - value type is list (default type is int) 2. Use dict[tuple(cnt)].append(s) or dict[''.join(sorted(s))].append(s) - key cannot be list, need to convert to string or tuple| 2020-09-03 |
-|76|[Minimum Window Substring](https://github.com/teslamyesla/leetcode/blob/master/python/076-minimum-window-substring.py) |Hard| O(∣S∣+∣T∣), |S|, |T|: len of str S, T |O(∣S∣+∣T∣) |String, Sliding Window|*| target_counter - counter == {}: check all target_counter chars are in counter; This problem is similiar with 003 | 2020-09-03 |
+|76|[Minimum Window Substring](https://github.com/teslamyesla/leetcode/blob/master/python/076-minimum-window-substring.py) |Hard| O(∣S∣+∣T∣), len of str S & T |O(∣S∣+∣T∣) |String, Sliding Window|*| target_counter - counter == {}: check all target_counter chars are in counter; This problem is similiar with 003 | 2020-09-03 |
 |125|[Valid Palindrome](https://github.com/teslamyesla/leetcode/blob/master/python/125-valid-palindrome.py) |Easy|O(n)|O(1)|String, Two Pointers|y| s[i].isalpha(), s[i].isdigit(), s[i].lower() | 2020-09-04 |
 |242|[Valid Anagram](https://github.com/teslamyesla/leetcode/blob/master/python/242-valid-anagram.py) |Easy|O(n)|O(1)|String|y| Use dict.keys(), collections.Counter() | 2020-09-03 |
 |424|[Longest Repeating Character Replacement](https://github.com/teslamyesla/leetcode/blob/master/python/424-longest-repeating-character-replacement.py) |Medium|O(n)|O(n)|String, Sliding Window|*| Start with a window of size 1 and increase it if size of window (which is r - l + 1) minus the amount of occurences of the most frequent character in the window (count) is less than or equal to k.| 2020-09-02 |
@@ -23,7 +23,7 @@ LeetCode
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
 |322|[Coin Change](https://github.com/teslamyesla/leetcode/blob/master/python/322-coin-change.py) |Medium|O(S*n), S: amount, n: number of coins|O(S)|DP|*| NA | 2020-10-20 |
-|416|[Partition Equal Subset Sum](https://github.com/teslamyesla/leetcode/blob/master/python/416-partition-equal-subset-sum.py) |Medium|O(m⋅n)|O(m)|DP, DFS, memo|*| 1. Convert to subSetSum = sum // 2  2. Similiar as Coin Change DP, but each number can only be used once (thus DP[i] update in a reverse order) | 2020-10-18 |
+|416|[Partition Equal Subset Sum](https://github.com/teslamyesla/leetcode/blob/master/python/416-partition-equal-subset-sum.py) |Medium|O(m⋅n), m: subSetSum amount, n: number of array ele,ents|O(m)|DP, DFS, memo|*| 1. Convert to subSetSum = sum // 2  2. Similiar as Coin Change DP, but each number can only be used once (thus DP[i] update in a reverse order) | 2020-10-18 |
 |473|[Matchsticks to Square](https://github.com/teslamyesla/leetcode/blob/master/python/473-matchsticks-to-square.py) |Medium|O(4^n)|O(n)|DFS, memo, backtracking|*| for i in range(4): sums[i] += nums[idx]; dfs; sums[i] -= nums[idx] | 2020-10-19 |
 
 LintCode
