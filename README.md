@@ -44,5 +44,5 @@ LintCode
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
 |178|[Graph Valid Tree]() |Medium| | |Topology Sort|*| NA | 2020-10-14 |
 |431|[Connected Component in Undirected Graph]() |Medium| | |DFS / Union Find|*| NA | 2020-10-14 |
-|892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|DFS / Union Find|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. return the topology order with lexicographical order when there are multiple valid order of chars, use heap instead of queue! | 2020-10-14 |
+|892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|DFS / Union Find|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. use heap instead of queue to maintain lexicographical order when multiple feasible topological orders! | 2020-10-14 |
 
