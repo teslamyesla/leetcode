@@ -3,7 +3,7 @@ Time complexity : O(S∗n), where S is amount, n is number of coins. On each ste
 Space complexity : O(S). We use extra space for the dp table.
 
 Note: 
-1. initialize dp with float('inf'), not zeros, due to the min problem
+1. initialize dp with float('inf') instead of zeros, due to min problem
 2. return dp[-1] if dp[-1] != float('inf'), else return -1
 
 """
