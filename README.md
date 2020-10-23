@@ -27,6 +27,7 @@ LeetCode
 |473|[Matchsticks to Square](https://github.com/teslamyesla/leetcode/blob/master/python/473-matchsticks-to-square.py) |Medium|O(4^n)|O(n)|DFS, memo, backtracking|*| for i in range(4): sums[i] += nums[idx]; dfs; sums[i] -= nums[idx] | 2020-10-19 |
 |494|[Target Sum](https://github.com/teslamyesla/leetcode/blob/master/python/494-target-sum.py) |Medium|O(l*n), l: range of sum, n: number of elements|O(l*n)|DFS, memo|*| memo[(target, idx)] = dfs(idx+1, target-nums[idx]) + dfs(idx+1, target+nums[idx]) | 2020-10-22 |
 |518|[Coin Change 2](https://github.com/teslamyesla/leetcode/blob/master/python/518-coin-change-2.py) |Medium|O(S*n), S: amount, n: number of coins|O(n)|DP|*| if i == coin: F[i] += 1; else F[i] += F[i-coin] for coin in coins | 2020-10-21 |
+|1049|[Last Stone Weight II](https://github.com/teslamyesla/leetcode/blob/master/python/1049-last-stone-weight-ii.py) |Medium|O(m⋅n), m: sum(stones)//2, n: number of stones|O(m)|DP|*| Key trick is to transform problem to find target cloest to sum(stones) // 2; dp[i] stores max amount achievable that <= i | 2020-10-23 |
 
 LintCode
 ========
