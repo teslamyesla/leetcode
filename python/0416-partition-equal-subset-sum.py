@@ -5,7 +5,7 @@ Space Complexity: O(m), As we use an array of size m to store the result of subp
 
 Solution 2: DFS + memo 
 Time Complexity : worst case O(2^n), where n is the number of array elements. The calculated subSetSum maybe always unique, where the worst-case time complexity would be the same as the non-memoized version in brute force (The recursive solution takes the form of a binary tree where there are 2 possibilities for every array element and the maximum depth of the tree could be n). However, for normal case, the time complexity should be same as bottom up DP.
-Space Complexity: O(m⋅n), where n is the number of array elements and mmm is the subSetSum. We are using a 2 dimensional array memo of size (m⋅n)and O(n) space to store the recursive call stack. This gives us the space complexity as O(n)+ O(m⋅n)
+Space Complexity: O(m⋅n), where n is the number of array elements and m is the subSetSum. We are using a 2 dimensional array memo of size (m⋅n)and O(n) space to store the recursive call stack. This gives us the space complexity as O(n)+ O(m⋅n)
 
 Solution 3: DFS + memo, 和473. Matchsticks to Square统一写法
 
