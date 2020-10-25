@@ -27,6 +27,7 @@ LeetCode
 |473|[Matchsticks to Square](https://github.com/teslamyesla/leetcode/blob/master/python/0473-matchsticks-to-square.py) |Medium|O(4^n)|O(n)|DFS, memo, backtracking|*| for i in range(4): sums[i] += nums[idx]; dfs; sums[i] -= nums[idx] | 2020-10-19 |
 |494|[Target Sum](https://github.com/teslamyesla/leetcode/blob/master/python/0494-target-sum.py) |Medium|O(l*n), l: range of sum, n: number of elements|O(l*n)|DFS, memo|*| memo[(target, idx)] = dfs(idx+1, target-nums[idx]) + dfs(idx+1, target+nums[idx]) | 2020-10-22 |
 |518|[Coin Change 2](https://github.com/teslamyesla/leetcode/blob/master/python/0518-coin-change-2.py) |Medium|O(S*n), S: amount, n: number of coins|O(n)|DP|*| if i == coin: F[i] += 1; else F[i] += F[i-coin] for coin in coins | 2020-10-21 |
+|805|[Split Array With Same Average](https://github.com/teslamyesla/leetcode/blob/master/python/0805-split-array-with-same-average.py) |Hard|O(2^(n/2))|O(2^(n/2))|DP|*| 1. Key trick is sum/n = sum1/k = sum2/(n-k) => only need to enter dfs when satisfying sum*k % n == 0 2. Only need to search half size, one of sum1/sum2 will have less than half of A's size | 2020-10-24 |
 |1049|[Last Stone Weight II](https://github.com/teslamyesla/leetcode/blob/master/python/1049-last-stone-weight-ii.py) |Medium|O(m⋅n), m: sum(stones)//2, n: number of stones|O(m)|DP|*| 1. Key trick is to transform problem to find target cloest to sum(stones) // 2; 2. dp[i] stores max amount achievable that <= i | 2020-10-23 |
 
 LintCode
