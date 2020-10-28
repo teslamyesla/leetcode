@@ -2,11 +2,11 @@
 Two solutions: DFS + memo or DP, both are a bit tricky and are hard to come up with!!
 
 Solution 1: DFS + memo
-Time Complexity: O(3^N)
+Time Complexity: O(NS). The memo array of size N*S has been filled just once. Here, S refers to the range of sum (which is upper limit of range of delta) and N refers to the size of rods.
 Space Complexity: O(NS)
 
 Solution 2: DP
-Time Complexity: O(NS), where N is the length of rods, and S is the sum of rods.
+Time Complexity: O(NS), where N is the size of rods, and S is the sum of rods.
 Space Complexity: O(NS). 
 
 """
