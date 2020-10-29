@@ -1,8 +1,22 @@
+"""
+Solution 1: DFS + memo
+
+Time: O(n^2)
+Space: O(n^2)
+
+Solution 2: Bottom up DP
+
+Time: O(n^2)
+Space: O(n^2)
+
+"""
+
 class Solution:
     """
     Solution 2: DP
     
     Reference: https://github.com/niufenjujuexianhua/Leetcode/blob/master/%5B375%5DGuess%20Number%20Higher%20or%20Lower%20II.py
+    另一种写法是循环len和start, 都是从头到尾循环，从len = 2开始，算完所有start，再算len = 3的所有start，也是同理。切记：bottom up dp的顺序要遵循推演顺序：从短的子数组推演到长的子数组。
     
     def getMoneyAmount(self, n: int) -> int:
         dp = [[float('inf')] * (n + 1) for _ in range(n + 1) ]
