@@ -8,7 +8,7 @@ class Solution:
         memo = {}
         return self.dfs(piles, 0, 1, memo)
     
-    def dfs(self, piles, idx, M, memo): # memo records future sum starting from idx
+    def dfs(self, piles, idx, M, memo): # memo records future sum of Alex starting from idx
         if (idx, M) in memo:
             return memo[(idx, M)]
         
