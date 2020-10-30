@@ -34,6 +34,7 @@ LeetCode
 |877|[Stone Game](https://github.com/teslamyesla/leetcode/blob/master/python/0877-stone-game.py) |Medium|O(n^2)|O(n^2)|DP, DFS, memo|*| Almost same as 486 "Predict the Winner" problem, max min dp | 2020-10-29 |
 |956|[Tallest Billboard](https://github.com/teslamyesla/leetcode/blob/master/python/0956-tallest-billboard.py) |Hard|O(n*s)|O(n*s)|DP, DFS, memo|*| Really hard problem with a lot of tricks both in DP and DFS solution! see py file for details | 2020-10-25 |
 |1049|[Last Stone Weight II](https://github.com/teslamyesla/leetcode/blob/master/python/1049-last-stone-weight-ii.py) |Medium|O(m⋅n), m: sum(stones)//2, n: number of stones|O(m)|DP|*| 1. Key trick is to transform problem to find target cloest to sum(stones) // 2; 2. dp[i] stores max amount achievable that <= i | 2020-10-23 |
+|1140|[Stone Game II](https://github.com/teslamyesla/leetcode/blob/master/python/1140-stone-game-ii.py) |Medium|O(n^2)|O(n^2)|DP, DFS, memo|y| max min dp, memo records future sum of Alex starting from idx | 2020-10-30 |
 
 LintCode
 ========
