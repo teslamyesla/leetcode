@@ -1,5 +1,5 @@
 """
-Time: O(n^2), memo of size n * M filled once, where M is bounded by n, thus n ^ 2
+Time: O(n^2), memo of size n * M filled once, where M is bounded by n, thus n^2
 Space: O(n^2), memo size n * M, where M is bounded by n, thus n^2
 """
 
