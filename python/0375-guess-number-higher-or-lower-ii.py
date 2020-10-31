@@ -1,12 +1,12 @@
 """
 Solution 1: DFS + memo
 
-Time: O(n^2)
+Time: O(n^3), reference: https://leetcode.com/problems/guess-number-higher-or-lower-ii/discuss/162347/Mathematical-proof-of-the-O(n3)-time-complexity
 Space: O(n^2)
 
 Solution 2: Bottom up DP
 
-Time: O(n^2)
+Time: O(n^3), reference: https://leetcode.com/problems/guess-number-higher-or-lower-ii/discuss/162347/Mathematical-proof-of-the-O(n3)-time-complexity
 Space: O(n^2)
 
 """
