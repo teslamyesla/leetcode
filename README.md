@@ -22,6 +22,7 @@ LeetCode
 ### Dynamic Programming
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
+|198|[House Robber](https://github.com/teslamyesla/leetcode/blob/master/python/0198-house-robber.py) |Easy|O(n)|O(n)|DP|*| NA | 2020-11-02 |
 |322|[Coin Change](https://github.com/teslamyesla/leetcode/blob/master/python/0322-coin-change.py) |Medium|O(S*n), S: amount, n: number of coins|O(S)|DP|*| F[i] = min(F[i], F[i-coin] + 1) for coin in coins | 2020-10-20 |
 |375|[Guess Number Higher or Lower II](https://github.com/teslamyesla/leetcode/blob/master/python/0375-guess-number-higher-or-lower-ii.py) |Medium|O(n^3)|O(n^2)|DP, DFS, memo|*| memo[(start, end)], for x in the range, if guessing x you need to pay x + max(helper(start,x-1),helper(x+1,end)), take min cost | 2020-10-28 |
 |416|[Partition Equal Subset Sum](https://github.com/teslamyesla/leetcode/blob/master/python/0416-partition-equal-subset-sum.py) |Medium|O(m⋅n), m: amount, n: number of elements|O(m)|DP, DFS, memo|*| 1. Convert to subSetSum = sum // 2  2. Similiar as Coin Change DP, but each number can only be used once (thus DP[i] update in a reverse order) | 2020-10-18 |
