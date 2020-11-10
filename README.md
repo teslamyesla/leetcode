@@ -37,7 +37,7 @@ LeetCode
 |1049|[Last Stone Weight II](https://github.com/teslamyesla/leetcode/blob/master/python/1049-last-stone-weight-ii.py) |Medium|O(m⋅n), m: sum(stones)//2, n: number of stones|O(m)|DP|*| 1. Key trick is to transform problem to find target cloest to sum(stones) // 2; 2. dp[i] stores max amount achievable that <= i | 2020-10-23 |
 |1140|[Stone Game II](https://github.com/teslamyesla/leetcode/blob/master/python/1140-stone-game-ii.py) |Medium|O(n^2)|O(n^2)|DP, DFS, memo|y| max min dp, memo records future sum of Alex starting from idx | 2020-10-30 |
 |1406|[Stone Game III](https://github.com/teslamyesla/leetcode/blob/master/python/1406-stone-game-iii.py) |Hard|O(n)|O(n)|DP, DFS, memo|*| max min dp, trick: dfs returns diff instead of absolute value of the first picker | 2020-10-31 |
-|1510|[Stone Game IV](https://github.com/teslamyesla/leetcode/blob/master/python/1510-stone-game-iv.py) |Hard|O(n*sqrt(n))|O(n)|DFS, memo|*| for i in range(1,int(math.sqrt(n))+1): if not self.dfs(n - i*i, memo) return True | 2020-11-01 |
+|1510|[Stone Game IV](https://github.com/teslamyesla/leetcode/blob/master/python/1510-stone-game-iv.py) |Hard|O(n*sqrt(n))|O(n)|DFS, memo|*| for i in range(1,int(math.sqrt(n))+1): if not dfs(n-i*i, memo) return True | 2020-11-01 |
 
 LintCode
 ========
