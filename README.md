@@ -59,3 +59,5 @@ LintCode
 |431|[Connected Component in Undirected Graph](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-431-connected-component-in-undirected-graph.py) |Medium| O(V+E) | O(V) | DFS / Union Find|*| NA | 2020-10-14 |
 |892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|Topology Sort|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. use HEAP instead of Queue to maintain lexicographical order during topological sort! | 2020-10-14 |
 
+Reference:
+https://docs.google.com/spreadsheets/d/1kBGyRsSdbGDu7DzjQcC-UkZjZERdrP8-_QyVGXHSrB8/htmlview?urp=gmail_link&gxids=7757#
