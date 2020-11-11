@@ -51,6 +51,13 @@ LintCode
 |458|[Last Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-458-last-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
 |462|[Total Occurrence of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-462-total-occurrence-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
 
+### Two Pointers
+| # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
+|---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
+|144|[Interleaving Positive and Negative Numbers]() |Medium|O(n)|O(1)|Partition, Two Pointers|*| NA | 2020-11-03 |
+|373|[Partition Array by Odd and Even]() |Easy|O(n)|O(1)|Partition|y| NA | 2020-11-03 |
+|461|[Kth Smallest Numbers in Unsorted Array]() |Medium|O(n)|O(1)|Quick Select, Partition|*| NA | 2020-11-03 |
+
 
 ### Graph
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
