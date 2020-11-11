@@ -54,9 +54,9 @@ LintCode
 ### Two Pointers
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
-|144|[Interleaving Positive and Negative Numbers]() |Medium|O(n)|O(1)|Partition, Two Pointers|*| NA | 2020-11-03 |
-|373|[Partition Array by Odd and Even]() |Easy|O(n)|O(1)|Partition|y| NA | 2020-11-03 |
-|461|[Kth Smallest Numbers in Unsorted Array]() |Medium|O(n)|O(1)|Quick Select, Partition|*| NA | 2020-11-03 |
+|144|[Interleaving Positive and Negative Numbers](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0144-interleaving-positive-and-negative-numbers.py) |Medium|O(n)|O(1)|Partition, Two Pointers|*| First partition, then two pointers exchange. Pay attention to 3 situations of len_pos, len_neg! | 2020-11-03 |
+|373|[Partition Array by Odd and Even](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0373-partition-array-by-odd-and-even.py) |Easy|O(n)|O(1)|Partition|y| NA | 2020-11-03 |
+|461|[Kth Smallest Numbers in Unsorted Array](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0461-kth-smallest-numbers-in-unsorted-array.py) |Medium|O(n)|O(1)|Quick Select, Partition|*| Classic Quick Select problem | 2020-11-03 |
 
 
 ### Graph
