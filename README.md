@@ -47,9 +47,9 @@ LintCode
 ### Binary Search
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
-|14|[First Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-014-first-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
-|458|[Last Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-458-last-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
-|462|[Total Occurrence of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-462-total-occurrence-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
+|14|[First Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0014-first-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
+|458|[Last Position of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0458-last-position-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
+|462|[Total Occurrence of Target](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0462-total-occurrence-of-target.py) |Easy|O(logn)|O(1)|Binary Search|y| NA | 2020-10-20 |
 
 ### Two Pointers
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
@@ -62,9 +62,9 @@ LintCode
 ### Graph
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
-|178|[Graph Valid Tree](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-178-graph-valid-tree.py) |Medium| O(n)| O(n)|DFS / Union Find|*| 3 properties of tree: 1) connectivity 2) n-1 edges for n node tree 3) no cycle. Satisfy any 2 of above qualifies for a tree. DFS checks 1+2, Union Find checks 2+3 | 2020-10-14 |
-|431|[Connected Component in Undirected Graph](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-431-connected-component-in-undirected-graph.py) |Medium| O(V+E) | O(V) | DFS / Union Find|*| NA | 2020-10-14 |
-|892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|Topology Sort|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. use HEAP instead of Queue to maintain lexicographical order during topological sort! | 2020-10-14 |
+|178|[Graph Valid Tree](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0178-graph-valid-tree.py) |Medium| O(n)| O(n)|DFS / Union Find|*| 3 properties of tree: 1) connectivity 2) n-1 edges for n node tree 3) no cycle. Satisfy any 2 of above qualifies for a tree. DFS checks 1+2, Union Find checks 2+3 | 2020-10-14 |
+|431|[Connected Component in Undirected Graph](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0431-connected-component-in-undirected-graph.py) |Medium| O(V+E) | O(V) | DFS / Union Find|*| NA | 2020-10-14 |
+|892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|Topology Sort|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. use HEAP instead of Queue to maintain lexicographical order during topological sort! | 2020-10-14 |
 
 ### Reference
 残酷刷题群 youtube: https://docs.google.com/spreadsheets/d/1kBGyRsSdbGDu7DzjQcC-UkZjZERdrP8-_QyVGXHSrB8/htmlview?urp=gmail_link&gxids=7757#
