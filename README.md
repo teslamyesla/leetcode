@@ -42,7 +42,7 @@ LeetCode
 LintCode
 ========
 
-### LintCode only algorithm &hearts;
+### LintCode algorithm &hearts;
 
 ### Binary Search
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
