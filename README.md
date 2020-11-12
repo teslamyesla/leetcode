@@ -54,9 +54,12 @@ LintCode
 ### Two Pointers
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
+|49|[Sort Letters by Case](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0049-sort-letters-by-case.py) |Medium|O(n)|O(1)|Partition|y| Python string is immutable, solution has a problem there | 2020-11-04 |
 |144|[Interleaving Positive and Negative Numbers](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0144-interleaving-positive-and-negative-numbers.py) |Medium|O(n)|O(1)|Partition, Two Pointers|*| First partition, then two pointers exchange. Pay attention to 3 situations of len_pos, len_neg! | 2020-11-03 |
+|148|[Sort Colors](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0148-sort-colors.py) |Medium|O(n)|O(1)|Partition, Two Pointers|*| Classic problem, 3 solutions: 1) counting values 2) two partitions 3) two pointers one pass | 2020-11-04 |
 |373|[Partition Array by Odd and Even](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0373-partition-array-by-odd-and-even.py) |Easy|O(n)|O(1)|Partition|y| NA | 2020-11-03 |
 |461|[Kth Smallest Numbers in Unsorted Array](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0461-kth-smallest-numbers-in-unsorted-array.py) |Medium|O(n)|O(1)|Quick Select, Partition|*| Classic Quick Select problem | 2020-11-03 |
+|894|[Pancake Sorting](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0894-pancake-sorting.py) |Medium|O(n)|O(1)|Bubble Sort|*| Idea similiar as bubble sort: sorted parts are at the end of array, find max in unsorted part, flip to pos=0 then flip to pos=len, len-- | 2020-11-04 |
 
 
 ### Graph
