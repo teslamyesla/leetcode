@@ -1,5 +1,5 @@
 """
-Time: O(n)
+Time: O(n^2)
 Space: O(1)
 
 Notes:
@@ -39,7 +39,7 @@ class Solution:
     通过第一次反转[0,pos], 将范围内最大值放到首部
     通过第二次反转[0,len]，将范维内最大值放到尾部
     未被确定的范围更新为[0,len−1]，重复上面的步骤，保证翻转操作次数最少
-    时间: O(n)，空间: O(1)
+    时间: O(n^2)，空间: O(1)
     
     Reference: https://www.jiuzhang.com/problem/pancake-sorting/#tag-lang-python
         
