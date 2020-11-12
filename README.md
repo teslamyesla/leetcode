@@ -17,6 +17,7 @@ LeetCode
 |424|[Longest Repeating Character Replacement](https://github.com/teslamyesla/leetcode/blob/master/python/0424-longest-repeating-character-replacement.py) |Medium|O(n)|O(n)|String, Sliding Window|*| Start with a window of size 1 and increase it if size of window (which is r - l + 1) minus the amount of occurences of the most frequent character in the window (count) is less than or equal to k.| 2020-09-02 |
 |647|[Palindromic Substrings](https://github.com/teslamyesla/leetcode/blob/master/python/0647-palindromic-substrings.py) |Medium|O(n^2)|O(1)|String|y| Same as 005, expandAroundCenter(s,i,i) and expandAroundCenter(s,i,i+1) | 2020-09-04 |
 |680|[Valid Palindrome II](https://github.com/teslamyesla/leetcode/blob/master/python/0680-valid-palindrome-ii.py) | Easy|O(n)|O(1)|String, Two Pointers|*| If s[i] == s[j] then we may take i++; j--. Otherwise, the palindrome must be either s[i+1], s[i+2], ..., s[j] or s[i], s[i+1], ..., s[j-1], and we should check both cases.| 2020-09-01 |
+|969|[Pancake Sorting](https://github.com/teslamyesla/leetcode/blob/master/python/0969-pancake-sorting.py) |Medium|O(n^2)|O(n)|Bubble Sort|*| Idea similiar as bubble sort, leetcode problem is different from lintcode one, thus provide both solutions | 2020-11-04 |
 
 
 ### Dynamic Programming
