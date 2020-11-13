@@ -56,13 +56,16 @@ LintCode
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
 |49|[Sort Letters by Case](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0049-sort-letters-by-case.py) |Medium|O(n)|O(1)|Partition|y| Python string is immutable, solution has a problem there | 2020-11-04 |
+|143|[Sort Colors II](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0143-sort-colors-ii.py) |Medium|O(nlogk), n is len of numbers, k is len of colors|O(1)|Quick Sort|*| Partition index_from to index_to，<= color_pivot goes to left，>color_pivot goes to right, where color_pivot=(color_from+color_to)//2 | 2020-11-06 |
 |144|[Interleaving Positive and Negative Numbers](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0144-interleaving-positive-and-negative-numbers.py) |Medium|O(n)|O(1)|Partition, Two Pointers|*| First partition, then two pointers exchange. Pay attention to 3 situations of len_pos, len_neg! | 2020-11-03 |
 |148|[Sort Colors](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0148-sort-colors.py) |Medium|O(n)|O(1)|Partition, Two Pointers|*| Classic problem, 3 solutions: 1) counting values 2) two partitions 3) two pointers one pass | 2020-11-04 |
 |228|[Middle of Linked List](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0228-middle-of-linked-list.py) |Naive|O(n)|O(1)|Fast Slow Pointers|*| Classic problem, pay attention to return center left of center right (center left: fast=head.next; center right: fast=head) | 2020-11-05 |
 |373|[Partition Array by Odd and Even](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0373-partition-array-by-odd-and-even.py) |Easy|O(n)|O(1)|Partition|y| NA | 2020-11-03 |
 |461|[Kth Smallest Numbers in Unsorted Array](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0461-kth-smallest-numbers-in-unsorted-array.py) |Medium|O(n)|O(1)|Quick Select, Partition|*| Classic Quick Select problem | 2020-11-03 |
+|464|[Sort Integers II](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0464-sort-integers-ii.py) |Easy|O(nlogn)|O(1)|Quick Sort|*| Classic Quick Sort | 2020-11-06 |
 |521|[Remove Duplicate Numbers in Array](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0521-remove-duplicate-numbers-in-array.py) |Easy|O(nlogn)|O(1)|Two Pointers|*| Classic problem, similiar as Move Zeros problem | 2020-11-05 |
 |539|[Move Zeroes](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0539-move-zeroes.py) |Easy|O(n)|O(1)|Two Pointers|*| Classic problem, in-place new (left pointer) old (right pointer) array | 2020-11-05 |
+|608|[Two Sum II - Input array is sorted](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0608-two-sum-ii-input-array-is-sorted.py) |Medium|O(n)|O(1)|Two Pointers|y| NA | 2020-11-06 |
 |894|[Pancake Sorting](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0894-pancake-sorting.py) |Medium|O(n^2)|O(1)|Bubble Sort|*| Idea similiar as bubble sort: put sorted parts to end of array, find max in unsorted part, flip to beginning then flip to len, len-- | 2020-11-04 |
 
 
