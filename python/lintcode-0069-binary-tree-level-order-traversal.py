@@ -1,6 +1,9 @@
 """
 Time: O(n)
 Space: O(n)
+
+Note: node = queue.pop(0)
+
 """
 
 """
