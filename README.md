@@ -75,9 +75,9 @@ LintCode
 ### BFS & Topological Sort
 | # | Title | Difficulty | Time | Space | Tag | Legend | Note | Last Submission Date |
 |---| ----- | ---------- | ---- | ----- | --- | ------ | ---- | -------------------- |
-|69|[Binary Tree Level Order Traversal](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0069-binary-tree-level-order-traversal.py) |Easy| O(n)| O(n)|BFS|y| pop left of list: queue.pop(0) | 2020-11-10 |
-|70|[Binary Tree Level Order Traversal II](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0070-binary-tree-level-order-traversal-ii.py) |Medium| O(n)| O(n)|BFS|y| insert to left of list: nums.insert(0, value) | 2020-11-10 |
-|71|[Binary Tree Zigzag Level Order Traversal](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0071-binary-tree-zigzag-level-order-traversal.py) |Medium| O(n)| O(n)|BFS|y| if from_left: level.append(node.val); else: level.insert(0, node.val) | 2020-11-10 |
+|69|[Binary Tree Level Order Traversal](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0069-binary-tree-level-order-traversal.py) |Easy| O(n)| O(n)|BFS|y| pop left of list: queue.pop(0) | 2020-12-18 |
+|70|[Binary Tree Level Order Traversal II](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0070-binary-tree-level-order-traversal-ii.py) |Medium| O(n)| O(n)|BFS|y| insert to left of list: nums.insert(0, value) | 2020-12-18 |
+|71|[Binary Tree Zigzag Level Order Traversal](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0071-binary-tree-zigzag-level-order-traversal.py) |Medium| O(n)| O(n)|BFS|y| if from_left: level.append(node.val); else: level.insert(0, node.val) | 2020-12-18 |
 |178|[Graph Valid Tree](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0178-graph-valid-tree.py) |Medium| O(n)| O(n)|DFS / Union Find|*| 3 properties of tree: 1) connectivity 2) n-1 edges for n node tree 3) no cycle. Satisfy any 2 of above qualifies for a tree. DFS checks 1+2, Union Find checks 2+3 | 2020-10-14 |
 |242|[Convert Binary Tree to Linked Lists by Depth](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0242-convert-binary-tree-to-linked-lists-by-depth.py) |Easy| O(n)| O(n)|BFS|y| BFS level order traversal | 2020-11-11 |
 |431|[Connected Component in Undirected Graph](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0431-connected-component-in-undirected-graph.py) |Medium| O(V+E) | O(V) | DFS / Union Find|*| NA | 2020-10-14 |
