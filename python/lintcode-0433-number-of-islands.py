@@ -1,5 +1,13 @@
+"""
+Solution 1: BFS
+Time:
+Space:
 
+Solution 2: DFS
+Time:
+Space:
 
+"""
 
 class Solution:
     """
