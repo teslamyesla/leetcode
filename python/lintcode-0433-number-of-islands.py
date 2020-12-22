@@ -1,9 +1,5 @@
 """
-Solution 1: BFS
-Time:
-Space:
-
-Solution 2: DFS
+Solution 1: DFS 
 Time:
 Space:
 
