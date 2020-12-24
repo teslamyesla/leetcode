@@ -49,7 +49,7 @@ class Solution:
         min_dist = float('inf')            
         for i in range(m):
             for j in range(n):
-                if reachable_count[i][j] == houses and dist[i][j] < min_dist:
+                if grid[i][j] == 0 and reachable_count[i][j] == houses and dist[i][j] < min_dist:
                     min_dist = dist[i][j]
      
         return min_dist if min_dist != float('inf') else -1
@@ -70,8 +70,8 @@ class Solution:
                 ni, nj = i + di, j + dj
                 
                 if ni >= 0 and ni < m and nj >= 0 and nj < n and not visited[ni][nj]:
-                    visited[ni][nj] = True
-                    if grid[ni][nj] == 0:
+                    visited[ni][nj] = True 
+                    if grid[ni][nj] == 0:  # You cannot pass through wall and house, thus only queue empty
                         queue.append((ni, nj, level + 1))
                         reachable_count[ni][nj] += 1
                         
