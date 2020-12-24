@@ -55,26 +55,23 @@ class Solution:
         return min_dist if min_dist != float('inf') else -1
         
     def bfs(self, grid, m, n, x, y, dist, reachable_count):
-        visited = [[False for _ in range(n)] for _ in range(m)]
-        visited[x][y] = True
-        queue = [(x, y, 0)]
+        visited = {}
+        visited[(i, j)] = True
+        queue = [(i, j, 0)]
         
         while queue:
             i, j, level = queue.pop(0)
             if dist[i][j] == float('inf'):
-                dist[i][j] = level
-            else:
-                dist[i][j] += level
+                dist[i][j] = 0
+            dist[i][j] += level
             
             for di, dj in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
                 ni, nj = i + di, j + dj
                 
-                if ni >= 0 and ni < m and nj >= 0 and nj < n and not visited[ni][nj]:
-                    visited[ni][nj] = True 
-                    if grid[ni][nj] == 0:  # You cannot pass through wall and house, thus only queue empty
-                        queue.append((ni, nj, level + 1))
-                        reachable_count[ni][nj] += 1
-                        
+                if ni >= 0 and ni < m and nj >= 0 and nj < n and (ni, nj) not in visited and grid[ni][nj] == 0:  # You cannot pass through wall and house, thus only queue empty
+                    visited[(ni, nj)] = True
+                    queue.append((ni, nj, level + 1))
+                    reachable_count[ni][nj] += 1           
         return
             
         
