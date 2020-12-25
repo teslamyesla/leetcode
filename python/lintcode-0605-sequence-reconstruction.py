@@ -1,6 +1,6 @@
 """
-Time:
-Space: 
+Time: O(V + E)
+Space: O(V + E)
 
 Notes:
 1. Use topology sort, with subtle difference
