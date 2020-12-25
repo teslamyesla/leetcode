@@ -37,7 +37,7 @@ class Solution:
                     queue.append(node.left)
                 if node.right:
                     queue.append(node.right)
-            level_curr.next = None
+            # level_curr.next = None
             res.append(level_dummy.next)
             
         return res
