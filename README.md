@@ -90,7 +90,7 @@ LintCode
 |615|[Course Schedule](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0615-course-schedule.py) |Medium| O(N+E)| O(N+E)|Topology Sort|y| Topology Sort | 2020-12-23 |
 |616|[Course Schedule II](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0616-course-schedule-ii.py) |Medium| O(N+E)| O(N+E)|Topology Sort|y| Topology Sort | 2020-12-23 |
 |618|[Search Graph Nodes](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0618-search-graph-nodes.py) |Medium| O(N+E)| O(N)|BFS in Graph|y| BFS in Graph, keep visited tracker | 2020-11-11 |
-|892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|Topology Sort|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. use HEAP instead of Queue to maintain lexicographical order during topological sort! | 2020-10-14 |
+|892|[Alien Dictionary](https://github.com/teslamyesla/leetcode/blob/master/python/lintcode-0892-alien-dictionary.py) |Hard| O(V+E)=O(n*k), n: # of words, k: avg word length| O(V+E)=O(n*k)|Topology Sort|*| 1. char is the node, char to char relationship is the dependency, use topology sort 2. use HEAP instead of Queue to maintain lexicographical order during topological sort! | 2020-12-21 |
 
 ### Reference
 残酷刷题群 youtube: https://docs.google.com/spreadsheets/d/1kBGyRsSdbGDu7DzjQcC-UkZjZERdrP8-_QyVGXHSrB8/htmlview?urp=gmail_link&gxids=7757#
