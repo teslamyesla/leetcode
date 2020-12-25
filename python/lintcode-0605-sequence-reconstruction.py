@@ -3,11 +3,11 @@ Time: O(V + E)
 Space: O(V + E)
 
 Notes:
-1. Use topology sort, with subtle difference
+1. Use topology sort, with differences listed as below
 2. Check unique_nodes == set(org) to handle corner cases: a) [1], []  b) [1,2,3,4,5], [[1,2,3,4,5], [10000]]
-3. Dependency relationship comes with multiple nodes instead of two nodes (node_in, node_out), thus use neighbors[seq[i-1]].add(seq[i]) to update
+3. Use neighbors[seq[i-1]].add(seq[i]) to update depedency relationship, due to it comes with multiple nodes instead of two nodes (node_in, node_out)
 4. Use set() to record neighbors, instead of [], to avoid duplicates in dependency: e.g., [[1,2,3], [2,3,4]], neighbors[2] = 3, not [3,3]
-5. Same reason as above, update indegree after fully update neighbors, to avoid duplicate counting: e.g. [[2,3], [2,3,4]], indegree[3] = 1, not 2
+5. Same reason as above, update indegree after fully updated neighbors, to avoid duplicate counting: e.g. [[2,3], [2,3,4]], indegree[3] = 1, not 2
 6. Make sure there's always only 1 element in the queue, due to uniqueness requirement of topology sort: if len(queue) > 1: return False
 
 """
