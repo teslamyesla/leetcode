@@ -64,3 +64,50 @@ class Solution:
         else:
             return "".join(res)
             
+            
+"""
+Revisited this problem on Dec 21, solution:
+
+import heapq
+
+class Solution:
+    def alienOrder(self, words):
+        # Write your code here
+        char_set = set()
+        for word in words:
+            for char in word:
+                char_set.add(char)
+                
+        indegree = {x: 0 for x in char_set}
+        neighbors = {x: set() for x in char_set}
+        
+        for i in range(1, len(words)):
+            for j in range(min(len(words[i-1]), len(words[i]))):
+                if words[i-1][j] != words[i][j]:
+                    neighbors[words[i-1][j]].add(words[i][j])
+                    break
+            if words[i] in words[i-1]: # invalid dictionary, to handle corner case of ["abc", "ab"] 
+                return ""
+                
+        for node in neighbors:
+            for neighbor in neighbors[node]:
+                indegree[neighbor] += 1
+                
+        heap = [] # maintain an priority queue, always by lexicographical order
+        for node in neighbors:
+            if indegree[node] == 0:
+                heapq.heappush(heap, node)
+         
+        # topology sort   
+        res = []
+        while heap:
+            node = heapq.heappop(heap)
+            res.append(node)
+            for neighbor in neighbors[node]:
+                indegree[neighbor] -= 1
+                if indegree[neighbor] == 0:
+                    heapq.heappush(heap, neighbor)
+                    
+        return "".join(res) if len(res) == len(indegree) else ""   
+        
+"""
