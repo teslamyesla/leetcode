@@ -5,14 +5,11 @@ For each word in the word list, we iterate over its length to find all the inter
 Breadth first search in the worst case might go to each of the N words. For each word, we need to examine M possible intermediate words/combinations. Notice, we have used the substring operation to find each of the combination. Thus, M combinations take O(M^2) time. As a result, the time complexity of BFS traversal would also be O((M^2)×N).
 Combining the above steps, the overall time complexity of this approach is O((M^2)×N).
 
-Space Complexity: O((M^2)×N).
-
-Each word in the word list would have M intermediate combinations. To create the all_combo_dict dictionary we save an intermediate word as the key and its corresponding original words as the value. Note, for each of M intermediate words we save the original word of length M. This simply means, for every word we would need a space of M^2 to save all the transformations corresponding to it. Thus, all_combo_dict would need a total space of O((M^2)×N).
-Visited dictionary would need a space of O(M×N) as each word is of length M.
-Queue for BFS in worst case would need a space for all O(N) words and this would also result in a space complexity of O(M×N).
-Combining the above steps, the overall space complexity is O((M^2)×N) + O(M∗N) + O(M∗N) = O((M^2)×N) space.
+Space Complexity: O(M*N).
+N为dict中单词个数，M为单词长度。用于bfs的队列最大需存下所有节点。
 
 Complexity Reference: https://leetcode.com/problems/word-ladder/solution/
+https://www.jiuzhang.com/problem/word-ladder/#tag-lang-python
 
 """
 
