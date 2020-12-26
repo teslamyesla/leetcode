@@ -25,13 +25,13 @@ class Solution:
     """
     def ladderLength(self, start, end, dict):
         # write your code here
-        dict.add(end)
+        dict.add(end) # add end to dict due to problem description "start and end words do not need to appear in the dictionary"
         queue = [start]
         visited = set(start)
         
         dist = 0
         while queue:
-            dist += 1
+            dist += 1 # 'a'->'c', return length of seq (which is 2) instead of length of trans (which is 1), thus ++
             for _ in range(len(queue)):
                 node = queue.pop(0)
                 if node == end:
@@ -39,17 +39,17 @@ class Solution:
                     
                 next_nodes = self.getNextWord(node)
                 for next_node in next_nodes:
-                    if next_node in dict and next_node not in visited:
+                    if next_node in dict and next_node not in visited: # check whether next_node has been visited!
                         visited.add(next_node)
                         queue.append(next_node)
         return 0
         
-    def getNextWord(self, word):
+    def getNextWord(self, word): 
         res = []
         for i in range(len(word)):
             left, right = word[:i], word[i+1:]
-            for char in "abcdefghijklmnopqrstuvwxyz":
-                if word[i] == char:
+            for char in "abcdefghijklmnopqrstuvwxyz": # core part of the solution!
+                if word[i] == char: # avoid self
                     continue
                 res.append(left + char + right)
         return res
