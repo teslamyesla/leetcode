@@ -1,6 +1,11 @@
 """
 Time: O(V + E)
 Space: O(V)
+
+Note:
+1. input type is a list of directed graph node, thus initialized indegree dictionary by for loop nodes in list
+2. topological order return type is a list of nodes, not a list of values
+
 """
 
 """
