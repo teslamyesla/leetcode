@@ -1,15 +1,15 @@
 """
-Time Complexity: O((M^2)×N), where M is the length of each word and N is the total number of words in the input word list.
+Time Complexity: O(26*(M^2)×N), where M is the length of each word and N is the total number of words in the input word list.
 
-For each word in the word list, we iterate over its length to find all the intermediate words corresponding to it. Since the length of each word is M and we have N words, the total number of iterations the algorithm takes to create all_combo_dict is M×N. Additionally, forming each of the intermediate word takes O(M) time because of the substring operation used to create the new string. This adds up to a complexity of O(M2×N).
-Breadth first search in the worst case might go to each of the N words. For each word, we need to examine M possible intermediate words/combinations. Notice, we have used the substring operation to find each of the combination. Thus, M combinations take O(M^2) time. As a result, the time complexity of BFS traversal would also be O((M^2)×N).
-Combining the above steps, the overall time complexity of this approach is O((M^2)×N).
+N为dict中单词个数，26代表字符集大小，M为单词长度。因为bfs所有节点最多遍历一次(N)，每次遍历到之后，需要扫遍单词的每个字符(M)，每个字符均可以变化为其他25个不同字母(26)，同时set.contain()的平均复杂度一般是O(M)
+
 
 Space Complexity: O(M*N).
 N为dict中单词个数，M为单词长度。用于bfs的队列最大需存下所有节点。
 
 Complexity Reference: https://leetcode.com/problems/word-ladder/solution/
 https://www.jiuzhang.com/problem/word-ladder/#tag-lang-python
+https://www.1point3acres.com/bbs/thread-205253-1-1.html
 
 """
 
