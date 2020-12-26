@@ -2,7 +2,7 @@
 Time Complexity: O(26*(M^2)×N), where M is the length of each word and N is the total number of words in the input word list.
 
 N为dict中单词个数，26代表字符集大小，M为单词长度。因为bfs所有节点最多遍历一次(N)，每次遍历到之后，需要扫遍单词的每个字符(M)，每个字符均可以变化为其他25个不同字母(26)，同时set.contain()的平均复杂度一般是O(M)
-
+所以总复杂度是 N*26*M*M
 
 Space Complexity: O(M*N).
 N为dict中单词个数，M为单词长度。用于bfs的队列最大需存下所有节点。
