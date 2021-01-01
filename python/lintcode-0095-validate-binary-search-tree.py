@@ -1,6 +1,16 @@
 """
 Time Complexity: O(n)
 Space Complexity : O(n) function Call Stack size
+
+Note:
+Solution 1 uses maxBound, minBound, where both starts from infinity and left branch's maxBound becomes root.val and right branch's minBound becomes root.val.
+           If at any time root.val >= maxBound or <= minBound, return False.
+           Therefore in this solution, initialization is maxBound = float('inf') and minBound = float('-inf')
+           
+Solution 2 uses max, min calculation where if validLeft and validRight and maxLeft < root.val < minRight, the tree is a valid BST.
+           Here returned max = max(maxLeft, root.val, maxRight) and min(minLeft, root.val, minRight)
+           Therefore in this solution, initialization is reversed: max = float('-inf') and min = float('inf')
+
 """
 
 """
@@ -16,8 +26,27 @@ class Solution:
     @param root: The root of binary tree.
     @return: True if the binary tree is BST, or false
     """
+    """
+    Solution 2: Calculate max, min in helper
+    """
     def isValidBST(self, root):
-        # write your code here
+        return self.helper(root)[0]
+        
+    def helper(self, root):
+        if root is None:
+            return True, float('-inf'), float('inf') 
+            
+        validLeft, maxLeft, minLeft = self.helper(root.left)
+        validRight, maxRight, minRight = self.helper(root.right)
+        
+        return validLeft and validRight and maxLeft < root.val < minRight, \
+               max(maxLeft, root.val, maxRight), \
+               min(minLeft, root.val, minRight)
+    
+    """
+    Solution 1: Use maxBound, minBound
+    
+    def isValidBST(self, root):
         return self.helper(root, float('inf'), float('-inf'))
     
     def helper(self, root, maxBound, minBound):
@@ -26,27 +55,8 @@ class Solution:
             
         if root.val >= maxBound or root.val <= minBound:
             return False
-            
-        return self.helper(root.left, root.val, minBound) and \
-                self.helper(root.right, maxBound, root.val)
-    
-    """
-    Solution 2: Calculate max, min in helper
-    
-    def isValidBST(self, root):
-        if root is None:
-            return True
-            
-        maxLeft, minLeft = self.returnMaxMin(root.left)
-        maxRight, minRight = self.returnMaxMin(root.right)
-            
-        return self.isValidBST(root.left) and self.isValidBST(root.right) and maxLeft < root.val and minRight > root.val
         
-    def returnMaxMin(self, root):
-        if root is None:
-            return float('-inf'), float('inf')
-        maxLeft, minLeft = self.returnMaxMin(root.left)
-        maxRight, minRight = self.returnMaxMin(root.right)    
-        return max(root.val, maxLeft, maxRight), min(root.val, minLeft, minRight)
+        return self.helper(root.left, root.val, minBound) and self.helper(root.right, maxBound, root.val)
     """
- 
+        
+        
