@@ -8,9 +8,15 @@ Space: O(n)
 Reference: https://www.jiuzhang.com/problem/subtree-with-maximum-average/#tag-lang-python
 
 Note:
-1. __init__ part can be replaced with curr_max_avg = 0, curr_max_avg_node = None, when referring to the variable, still use self.var_name, see detail in code comment
+1. __init__ part is the way to initialize class variables (or more precise object-level variables)!
 2. An easy mistake is to initialize curr_max_avg_node with root, but this could be very wrong when root.val is far smaller than the real avg and no branch can beat this default value!
 Thus the correct way is to initialize curr_max_avg = 0 and set curr_max_avg_node to None!
+
+References:
+1. Two ways to define class variables in python: https://stackoverflow.com/questions/9056957/correct-way-to-define-class-variables-in-python
+   Class-level static vars v.s. Object-level dynamic vars
+2. How to define class variables: https://stackoverflow.com/questions/6475321/global-variable-python-classes
+3. How to declare global var in a python class: https://www.tutorialspoint.com/How-do-I-declare-a-global-variable-in-Python-class
 
 """
 
@@ -32,7 +38,7 @@ class Solution:
         self.curr_max_avg_node = None
         
     """
-    # __init__ part can be replaced as below two lines:
+    # __init__ part can be replaced with below two lines (if the vars are class level instead of object level vars):
     curr_max_avg = 0
     curr_max_avg_node = None
     """
