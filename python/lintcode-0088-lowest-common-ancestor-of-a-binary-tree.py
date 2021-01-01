@@ -17,7 +17,7 @@ Example:
    /    \
   A      B
   
-After checking root != null and root != A or B, we need to divide and conquer to check self.lowestCommonAncestor(root.left, A, B) and self.lowestCommonAncestor(root.right, A, B),
+After checking root != null and root != A or B, it divide and conquer to check self.lowestCommonAncestor(root.left, A, B) and self.lowestCommonAncestor(root.right, A, B),
 which are self.lowestCommonAncestor(A, A, B) and self.lowestCommonAncestor(B, A, B). Here, we can see the assumption of assuming both keys are present is important,
 where in the base case it no longer hold (B is out of presence of the tree in the case of (A,A,B))! Thus the meaning of LCA return value is more of the root where
 we can find at least one node. That's why we could have LCA return value both exists in root.left branch as well as root.right branch, and we need to check that to 
