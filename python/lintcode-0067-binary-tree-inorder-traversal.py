@@ -1,4 +1,17 @@
 """
+Solution 1: Recurrsive
+Time complexity : O(n). The time complexity is O(n) because the recursive function is T(n)=2⋅T(n/2)+1T(n) = 2⋅T(n/2)+1T(n)=2⋅T(n/2)+1
+Space complexity : The worst case space required is O(n), and in the average case it's O(log⁡n) where n is number of nodes
+
+Solution 2: Iterative
+Time complexity : O(n)
+Space complexity : O(n)
+
+Note: The iterative solution using stack is important, to be memorized!!!
+
+"""
+
+"""
 Definition of TreeNode:
 class TreeNode:
     def __init__(self, val):
