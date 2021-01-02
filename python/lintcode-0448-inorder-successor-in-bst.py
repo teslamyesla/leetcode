@@ -1,9 +1,17 @@
 """
-Solution 1: In order traversal of tree
+Solution 1: Directly use in-order-traversal of Binary Tree
 Time: O(n)
 Space: O(n)
 
+Solution 2: Recursive O(h) solution 
+Time: O(h)
+Space: O(h)
 
+Solution 3: Iterative O(h) Solution 
+Time: O(h)
+Space: O(1)
+
+O(h)解法思路如下：
 
 首先要确定中序遍历的后继:
 
