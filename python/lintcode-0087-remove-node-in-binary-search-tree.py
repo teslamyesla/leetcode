@@ -1,5 +1,5 @@
 """
-递归解法：O(h) time, O(h) space, h: height of tree
+Divide and Conquer 分治解法：O(h) time, O(h) space, h: height of tree
 
 1. 递归寻找value所在节点：若小于root，则递归左子树removeNode；若大于root，则递归右子树removeNode
 2. 当root.value == value时，root即是需要被移除的节点，此时分三种情况移除:
