@@ -1,6 +1,8 @@
 """
 Time: O(n)
 Space: O(h)
+
+Note: how to connect & return value (return right_last or left_last or root) is the core part
 """
 
 """
