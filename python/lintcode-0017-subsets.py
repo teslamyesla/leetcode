@@ -33,7 +33,7 @@ class Solution:
         self.dfs(nums, idx + 1, subset, res)
     
     """
-    Solution 1: Iterative
+    Solution 1: Iterative (Bottom Up DP)
     Time: O(N * 2^N) to generate all subsets and then copy them into output list
     Space: O(N * 2^N). This is exactly the number of solutions for subsets multiplied by the number N of elements to keep for each subset.
     
