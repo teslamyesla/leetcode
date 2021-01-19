@@ -38,7 +38,7 @@ class Solution:
             return
         
         for i in range(start, len(candidates)):
-            if i > 0 and candidates[i] == candidates[i-1]:
+            if i > start and candidates[i] == candidates[i-1]:
                 continue 
             
             path.append(candidates[i])
