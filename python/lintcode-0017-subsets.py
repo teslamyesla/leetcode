@@ -1,22 +1,44 @@
 """
-Time: O(N * 2^N) to generate all subsets and then copy them into output list
-Space: O(N * 2^N) to keep all the subsets of length N, since each of N elements could be present or absent. 
+Time: O(2^N) 
+Space: O(N) for path and dfs stack (ignore space to save res)
 
 Reference: 
 https://leetcode.com/problems/subsets/solution/
 https://www.jiuzhang.com/problem/subsets/
 https://www.lintcode.com/problem/subsets/solution
+
+3 Solutions youtube: https://www.youtube.com/watch?v=MsHFNGltIxw
+Discussion solution: https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
 """
-        
-class Solution:        
+
+class Solution:  
     """
-    Solution 2: DFS backtracking
-    Time: O(N * 2^N) to generate all subsets and then copy them into output list
-    Space: O(N * 2^N) to keep all the subsets of length N, since each of N elements could be present or absent. 
+    Solution 3: DFS backtracking - enumerate numbers for a position, add all paths during the process to res
+    Time: O(2^N) 
+    Space: O(N) for path and dfs stack (ignore space to save res)
     """
     def subsets(self, nums):
-        nums.sort()
         res = []
+        nums.sort()
+        self.dfs(nums, 0, [], res)
+        return res
+    
+    def dfs(self, nums, start, path, res):
+        res.append(list(path))  # path array keep changing! append path[:] or list(path) instead!
+        
+        for i in range(start, len(nums)):
+            path.append(nums[i])
+            self.dfs(nums, i + 1, path, res)
+            path.pop()
+    
+    """
+    Solution 2: DFS backtracking - choose or not choose, only add the leaf path to res
+    Time: O(2^N) 
+    Space: O(N) for path and dfs stack (ignore space to save res)
+    
+    def subsets(self, nums):
+        res = []
+        nums.sort()
         self.dfs(nums, 0, [], res)
         return res
     
@@ -31,19 +53,19 @@ class Solution:
         # not pick nums[idx]
         subset.pop()
         self.dfs(nums, idx + 1, subset, res)
+    """
     
     """
-    Solution 1: Iterative (Bottom Up DP)
-    Time: O(N * 2^N) to generate all subsets and then copy them into output list
-    Space: O(N * 2^N). This is exactly the number of solutions for subsets multiplied by the number N of elements to keep for each subset.
+    Solution 1: Iterative
+    Time: O(2^N) 
+    Space: O(N) 
     
     def subsets(self, nums):
-        nums.sort()
         output = [[]]
+        nums.sort()
         
         for num in nums:
             output += [curr + [num]for curr in output]
             
         return output
     """
-        
